@@ -1,12 +1,23 @@
+<script setup lang="ts">
+import TodoList from './components/TodoList.vue';
+</script>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div class="containerer">
+    <h1>
+      Todo list app
+    </h1>
+    <TodoList />
+  </div>
 </template>
 
 <style>
+.containerer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
